@@ -43,7 +43,7 @@ class App extends Component {
           </ol>
         </nav>
           <div className="login">
-            <button onClick={this.login}>Log In</button>
+            <button className="button" onClick={this.login}>Log In</button>
           </div>
       </div>
     );
