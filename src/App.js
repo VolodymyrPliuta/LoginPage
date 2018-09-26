@@ -16,7 +16,7 @@ class App extends Component {
         </nav>
           <div className="login">
             <button>Log In</button>
-          <div>
+          </div>
       </div>
     );
   }
