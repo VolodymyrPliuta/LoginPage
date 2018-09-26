@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+let button = document.getElementsByTagName('button')
+
 class App extends Component {
   constructor() {
   super();
@@ -9,19 +11,23 @@ class App extends Component {
     }
   }
 
+
   login = () => {
       console.log("log")
       if (this.state.logedin === false) {
         this.setState({
           logedin: true
         })
+        button[0].innerHTML = "Log Out"
         console.log(true)
+        console.log(button)
       }
     else{
         this.setState({
           logedin: false
         })
         console.log(false)
+        button[0].innerHTML = "Log In"
     }
   }
 
