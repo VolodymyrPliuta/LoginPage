@@ -2,6 +2,27 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+  super();
+    this.state = {
+      logedin: false
+    }
+  }
+
+  login = () => {
+      console.log("log")
+      if (this.state.logedin === false) {
+        this.setState({
+          logedin: true
+        })
+        console.log(true)
+      }
+    else{
+        this.setState({
+          logedin: false
+        })
+        console.log(false)
+    }
   }
 
   render() {
