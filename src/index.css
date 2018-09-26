@@ -7,11 +7,12 @@ body {
 .nav-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .nav {
   display: flex;
+  flex:4;
 }
 
 ol {
@@ -24,9 +25,7 @@ li {
 }
 
 .login {
-  justify-content: flex-end;
-  
-}
+  display:flex;
+  flex:1;
 
-button {
 }

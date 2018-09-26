@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  }
 
   render() {
     return (
@@ -15,7 +16,7 @@ class App extends Component {
           </ol>
         </nav>
           <div className="login">
-            <button>Log In</button>
+            <button onClick={this.login}>Log In</button>
           </div>
       </div>
     );
