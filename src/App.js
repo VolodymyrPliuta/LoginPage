@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import Login from './Login';
 
-let button = document.getElementsByClassName('button')
 const slideMenu = document.getElementsByClassName('slide-menu')
 const form = document.getElementsByClassName('form')
+const userName = document.getElementsByClassName('userName')
+const password = document.getElementsByClassName('password')
 
 class App extends Component {
   constructor() {
@@ -27,6 +28,14 @@ class App extends Component {
         mobileMenu: false
       })
       slideMenu[0].setAttribute('style', 'left: -40%')
+    }
+  }
+
+  submit = (e) => {
+   e.preventDefault();
+    console.log(userName[0].value, password);
+    if(userName[0].value === 'admin' && password[0].value === 'admin') {
+      alert("you got the most popular password!")
     }
   }
 
@@ -64,9 +73,9 @@ class App extends Component {
           <div className="form">
             <form>
               <p>UserName:</p>
-              <input type="text" />
+              <input className="userName" type="text" />
               <p>Password: </p>
-              <input type="password" />
+              <input className="password" type="password" />
               <button onClick={this.submit}>Submit</button>
             </form>
           </div>
