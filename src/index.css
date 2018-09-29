@@ -12,7 +12,7 @@ body {
 .body {
   display: flex;
   flex-direction: column;
-  background-color: #9ccf8d;
+  background-color: #007390;
   height: 100vh;
 }
 .nav-menu {
@@ -30,11 +30,12 @@ body {
 .nav-mobile {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 100%;
 }
 .button {
   width: 100%;
   background-color: navajowhite;
+  font-size: 41px;
 }
 
 .popupSection {
@@ -47,8 +48,16 @@ ol {
 }
 
 li {
+  flex: 1 0 0;
   margin: 0 9px;
+  padding: 0 10%;
   min-width: 15%;
+  background-color: #83d95e;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 20%;
 }
 .slide-menu {
   display: flex;
@@ -79,16 +88,27 @@ a {
   color: #494949;
 }
 
-@media only screen and (max-width: 600px) {
-  .nav {
-    font-size: 40px;
-    display: none
-  }
-}
+    @media only screen and (max-width: 600px) {
+      .nav {
+        font-size: 41px;
+        width: 100vw;
+        justify-content: center;
+      }
+      ol {
+        flex-direction: column;
+      padding-inline-start: 0px;
+      }
+      li {
+        margin: 15% 0px;
+      }
+      .nav-menu {
+        flex-direction: column;
+      }
+    }
 
-@media only screen and (min-width: 600px) {
-  .nav-mobile {
-    font-size: 40px;
-    display: none;
-  }
-}
+   /*  @media only screen and (min-width: 600px) {
+      .nav-mobile {
+        font-size: 40px;
+        display: none;
+      }
+    } */

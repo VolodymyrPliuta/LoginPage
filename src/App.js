@@ -64,11 +64,11 @@ class App extends Component {
               <li><a href="…">Page4</a></li>
             </ol>
           </nav>
-          <nav className="nav-mobile" onClick={this.menuSlide}>
+          {/*      <nav className="nav-mobile" onClick={this.menuSlide}>
             <a>
               <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path></svg>
             </a>
-          </nav>
+          </nav> */}
           <div className="login">
             <button className="button" onClick={this.login}>Log In</button>
           </div>
