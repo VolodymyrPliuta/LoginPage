@@ -9,6 +9,12 @@ body {
   font-color: #494949;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: #9ccf8d;
+  height: 100vh;
+}
 .nav-menu {
   display: flex;
   flex-direction: row;
@@ -21,9 +27,18 @@ body {
   flex:4;
 }
 
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
 .button {
   width: 100%;
   background-color: navajowhite;
+}
+
+.popupSection {
+  display: flex;
 }
 
 ol {
@@ -33,6 +48,24 @@ ol {
 
 li {
   margin: 0 9px;
+  min-width: 15%;
+}
+.slide-menu {
+  display: flex;
+  flex-direction: row;
+  background-color: #99ADD9;
+  position: relative;
+  left: -40%;
+  width: 40%;
+}
+
+.form {
+  justify-content: right;
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  color: white
 }
 
 .login {
@@ -46,8 +79,16 @@ a {
   color: #494949;
 }
 
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 40px;
+    display: none
+  }
+}
+
 @media only screen and (min-width: 600px) {
-     .nav {
-        font-size: 40px;
-    }
+  .nav-mobile {
+    font-size: 40px;
+    display: none;
+  }
 }
